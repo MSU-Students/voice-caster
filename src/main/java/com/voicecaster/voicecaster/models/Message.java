@@ -1,13 +1,13 @@
-package com.voicecaster.voicecaster;
+package com.voicecaster.voicecaster.models;
 
-public class HelloMessage {
+public class Message {
     private String name;
 
-    public HelloMessage() {
+    public Message() {
 
     }
-    
-    public HelloMessage(String name) {
+
+    public Message(String name) {
         this.name = name;
     }
 
@@ -18,4 +18,5 @@ public class HelloMessage {
     public void setName(String name) {
         this.name = name;
     }
+
 }
