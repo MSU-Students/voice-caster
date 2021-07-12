@@ -4,6 +4,7 @@ Voice Server
 ```
 ## run
 ```bash
+mvn spring-boot:start
 mvn spring-boot:run
 ```
 
