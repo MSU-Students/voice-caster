@@ -1,6 +1,10 @@
 # voice-caster-server
 ```bash
-A voice-based application
+Voice Server
+```
+## run
+```bash
+mvn spring-boot:run
 ```
 
 ## Install the dependencies
