@@ -5,8 +5,6 @@ import com.voicecaster.voicecaster.models.OutputMessage;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.util.HtmlUtils;
-
 @Controller
 public class VoiceController {
 
@@ -14,7 +12,7 @@ public class VoiceController {
   @SendTo("/topic/announcements")
   public OutputMessage send(Message message) throws Exception {
     Thread.sleep(1000);
-    System.out.println("Client: " + message.getName());
-    return new OutputMessage(HtmlUtils.htmlEscape(message.getName()));
+    // System.out.println("Message: " + message.getMessage());
+    return new OutputMessage(message.getMessage());
   }
 }

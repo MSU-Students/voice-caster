@@ -2,15 +2,27 @@ package com.voicecaster.voicecaster.models;
 
 public class OutputInstitution {
 
-  private Institution content;
+  private String institution;
+  private String code;
+  private String status;
 
   public OutputInstitution() {}
 
-  public OutputInstitution(Institution institution) {
-    this.content = institution;
+  public OutputInstitution(String institution, String code, String status) {
+    this.institution = institution;
+    this.code = code;
+    this.status = status;
   }
 
-  public Institution getContent() {
-    return content;
+  public String getInstituition() {
+    return institution;
+  }
+  
+  public String getCode() {
+    return code;
+  }
+
+  public String getStatus() {
+    return status;
   }
 }

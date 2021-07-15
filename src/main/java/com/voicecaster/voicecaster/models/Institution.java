@@ -7,9 +7,13 @@ public class Institution {
   private String status;
 
   public Institution(String institution, String code, String status) {
-    this.setInstitution(institution);
-    this.setCode(code);
-    this.setStatus(status);
+    this.institution = institution;
+    this.code = code;
+    this.status = status;
+  }
+
+  public Institution() {
+
   }
 
   public String getInstitution() {

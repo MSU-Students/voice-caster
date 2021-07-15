@@ -11,7 +11,7 @@ public class Message {
         this.name = name;
     }
 
-    public String getName() {
+    public String getMessage() {
         return name;
     }
 
