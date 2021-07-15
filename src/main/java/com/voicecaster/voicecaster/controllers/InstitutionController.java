@@ -14,7 +14,7 @@ public class InstitutionController {
   public OutputInstitution send(Institution institution)
     throws Exception {
     Thread.sleep(1000);
-    System.out.println("Client: " + institution.getInstitution() + " Code: " + institution.getCode() + " Status: " + institution.getStatus());
-    return new OutputInstitution(institution.getInstitution(), institution.getCode(), institution.getStatus());
+    System.out.println("Client: " + institution.getClient() + " Code: " + institution.getCode() + " Status: " + institution.getStatus());
+    return new OutputInstitution(institution.getClient(), institution.getCode(), institution.getStatus());
   }
 }
