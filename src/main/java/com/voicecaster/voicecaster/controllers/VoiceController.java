@@ -11,8 +11,7 @@ public class VoiceController {
   @MessageMapping("/information")
   @SendTo("/topic/announcements")
   public OutputMessage send(Message message) throws Exception {
-    Thread.sleep(1000);
-    // System.out.println("Message: " + message.getMessage());
+    //System.out.println("Audio: " + message.getMessage());
     return new OutputMessage(message.getMessage());
   }
 }

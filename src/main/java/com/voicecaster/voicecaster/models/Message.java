@@ -1,22 +1,22 @@
 package com.voicecaster.voicecaster.models;
 
 public class Message {
-    private String name;
+    private String voiceMessage;
 
     public Message() {
 
     }
 
-    public Message(String name) {
-        this.name = name;
+    public Message(String voiceMessage) {
+        this.voiceMessage = voiceMessage;
     }
 
     public String getMessage() {
-        return name;
+        return voiceMessage;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String voiceMessage) {
+        this.voiceMessage = voiceMessage;
     }
 
 }
